@@ -1,0 +1,80 @@
+/*
+
+!docroot/
+
+# Ignore user generated content.
+docroot/sites/*/files/
+# Ignore any custom settings.
+docroot/sites/*/settings*.php
+# Build reports.
+docroot/reports/
+# Behat configuration file.
+behat.yml
+
+# Ansible playbooks.
+!scripts/
+# Behat tests.
+!tests/
+
+# Ignore hidden files.
+.*
+~*
+# Ignore Ansible-generated data.
+*.retry
+
+!*.md
+commentinfo.md
+
+!.htaccess
+# Helper file that afect to "synchronize" task of Ansible.
+!.rsync-filter
+!.git*
+!.eslint*
+!.codespellignore
+
+# CIKit stuff.
+!.cikit/
+
+!LICENSE
+!composer.*
+!Vagrantfile
+
+
+# compiled output
+/frontroot/testing-project/dist
+/frontroot/testing-project/tmp
+
+# dependencies
+/frontroot/testing-project/node_modules
+
+# IDEs and editors
+/.idea
+/frontroot/testing-project/.project
+/frontroot/testing-project/.classpath
+/frontroot/testing-project/.c9/
+/frontroot/testing-project/*.launch
+/frontroot/testing-project/.settings/
+
+# IDE - VSCode
+/frontroot/testing-project/.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# e2e
+/frontroot/testing-project/e2e/*.js
+/frontroot/testing-project/e2e/*.map
+
+#System Files
+/frontroot/testing-project/.DS_Store
+/frontroot/testing-project/Thumbs.db

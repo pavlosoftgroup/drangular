@@ -1,0 +1,59 @@
+# This playbook could be run in various modes:
+#
+# 1. Install Behat, generate "behat.yml" from template and run Selenium hub.
+# cikit tests
+# 2. Actions from first step and run Behat tests.
+# cikit tests --run
+# 3. The same as second variant, but with Xvfb service started. Tests could be run without display.
+# cikit tests --run --headless
+---
+- hosts: localhost
+  gather_facts: yes
+  connection: local
+  become: yes
+
+  vars_files:
+    - ../.cikit/config.yml
+    - vars/main.yml
+    - vars/tests.yml
+
+  vars:
+    run: no
+    headless: no
+
+  tasks:
+    - include: tasks/environment/initialize.yml
+
+    - name: Ensure Selenium started
+      service:
+        name: selenium.grid.hub
+        state: restarted
+      when: run and not headless
+
+    - name: Ensure PhantomJS started
+      shell: phantomjs --webdriver=4444 --ignore-ssl-errors=true &
+      when: run and headless
+
+    - name: Wait for establish Selenium/PhantomJS connection
+      wait_for:
+        port: 4444
+        host: 127.0.0.1
+        delay: 10
+      when: run
+
+    - name: Create behat.yml
+      template:
+        src: templates/behat.j2
+        dest: ../tests/behat/behat.yml
+
+    - name: Run Behat tests
+      shell: "cd ../tests/behat && ../../bin/behat"
+      ignore_errors: yes
+      when: run
+
+    - name: Create Behat report
+      shell: >
+        printf '\n- <a href="{{ reports.url }}/behat/index.html">Behat</a>' >> {{ reports.comment }}
+      args:
+        removes: "{{ reports.dir }}/behat/*.html"
+      when: run
