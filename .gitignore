@@ -1,6 +1,7 @@
 /*
 
 !docroot/
+!frontroot/
 
 # Ignore user generated content.
 docroot/sites/*/files/
