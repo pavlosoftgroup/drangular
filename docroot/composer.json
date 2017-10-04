@@ -16,7 +16,8 @@
         "drupal/coffee": "^1.0@beta",
         "drupal/restui": "^1.15",
         "drupal/features": "^3.5",
-        "drupal/rules": "^3.0@alpha"
+        "drupal/rules": "^3.0@alpha",
+        "drupal/redirect": "^1.0@beta"
     },
     "replace": {
         "drupal/core": "~8.3"
