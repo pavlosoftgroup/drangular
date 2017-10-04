@@ -9,7 +9,7 @@ CONTENTS OF THIS FILE
  * Developing for Drupal
  * More information
 
-ABOUT DRUPAL
+ABOUT DRUPAL gffffffffg
 ------------
 
 Drupal is an open source content management platform supporting a variety of
