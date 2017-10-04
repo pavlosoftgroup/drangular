@@ -6939,5 +6939,526 @@
         "support": {
             "source": "http://cgit.drupalcode.org/redirect"
         }
+    },
+    {
+        "name": "drupal/token",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/token",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0.zip",
+            "reference": "8.x-1.0",
+            "shasum": "d24c7f1ffddbd0fc56bc92bacae1c4ff769a4442"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1493466843",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Berdir",
+                "homepage": "https://www.drupal.org/user/214652"
+            },
+            {
+                "name": "Dave Reid",
+                "homepage": "https://www.drupal.org/user/53892"
+            },
+            {
+                "name": "eaton",
+                "homepage": "https://www.drupal.org/user/16496"
+            },
+            {
+                "name": "fago",
+                "homepage": "https://www.drupal.org/user/16747"
+            },
+            {
+                "name": "greggles",
+                "homepage": "https://www.drupal.org/user/36762"
+            },
+            {
+                "name": "mikeryan",
+                "homepage": "https://www.drupal.org/user/4420"
+            }
+        ],
+        "description": "Provides a user interface for the Token API and some missing core tokens.",
+        "homepage": "https://www.drupal.org/project/token",
+        "support": {
+            "source": "http://cgit.drupalcode.org/token"
+        }
+    },
+    {
+        "name": "drupal/pathauto",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/pathauto",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0.zip",
+            "reference": "8.x-1.0",
+            "shasum": "4c82a5689a18421c8c73fcc8be7b333bb21ae02a"
+        },
+        "require": {
+            "drupal/core": "*",
+            "drupal/ctools": "*",
+            "drupal/token": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1493468044",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Berdir",
+                "homepage": "https://www.drupal.org/user/214652"
+            },
+            {
+                "name": "Dave Reid",
+                "homepage": "https://www.drupal.org/user/53892"
+            },
+            {
+                "name": "Freso",
+                "homepage": "https://www.drupal.org/user/27504"
+            },
+            {
+                "name": "greggles",
+                "homepage": "https://www.drupal.org/user/36762"
+            }
+        ],
+        "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage.",
+        "homepage": "https://www.drupal.org/project/pathauto",
+        "support": {
+            "source": "http://cgit.drupalcode.org/pathauto"
+        }
+    },
+    {
+        "name": "drupal/hook_update_deploy_tools",
+        "version": "dev-1.x",
+        "version_normalized": "dev-1.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/hook_update_deploy_tools",
+            "reference": "25416c0d16b5222ca1176ae262067e84f623b550"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-unstable1+26-dev",
+                "datestamp": "1469847239",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Dev releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "HookUpdateDeployTools\\": "src"
+            }
+        },
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Steve Wirt",
+                "homepage": "https://www.drupal.org/user/138230",
+                "email": "swirtMiles@138230.no-reply.drupal.org"
+            }
+        ],
+        "description": "Hook Update Deploy Tools adds methods for managing site deployment through code.",
+        "homepage": "https://www.drupal.org/project/hook_update_deploy_tools",
+        "support": {
+            "source": "http://cgit.drupalcode.org/hook_update_deploy_tools"
+        }
+    },
+    {
+        "name": "drupal/context",
+        "version": "4.0.0-beta2",
+        "version_normalized": "4.0.0.0-beta2",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/context",
+            "reference": "8.x-4.0-beta2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/context-8.x-4.0-beta2.zip",
+            "reference": "8.x-4.0-beta2",
+            "shasum": "e41bc912e1ec73bc4d08a3cf730dc2405a9213d3"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-4.x": "4.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-4.0-beta2",
+                "datestamp": "1505378944",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Christoffer Palm",
+                "homepage": "http://www.oddhill.se/",
+                "email": "christoffer.palm@oddhill.se",
+                "role": "Developer"
+            },
+            {
+                "name": "Steven Jones",
+                "homepage": "https://www.drupal.org/user/99644"
+            },
+            {
+                "name": "alex_b",
+                "homepage": "https://www.drupal.org/user/53995"
+            },
+            {
+                "name": "boshtian",
+                "homepage": "https://www.drupal.org/user/1773456"
+            },
+            {
+                "name": "colan",
+                "homepage": "https://www.drupal.org/user/58704"
+            },
+            {
+                "name": "emanaton",
+                "homepage": "https://www.drupal.org/user/120853"
+            },
+            {
+                "name": "febbraro",
+                "homepage": "https://www.drupal.org/user/43670"
+            },
+            {
+                "name": "fizk",
+                "homepage": "https://www.drupal.org/user/473174"
+            },
+            {
+                "name": "hass",
+                "homepage": "https://www.drupal.org/user/85918"
+            },
+            {
+                "name": "hefox",
+                "homepage": "https://www.drupal.org/user/426416"
+            },
+            {
+                "name": "hyrcan",
+                "homepage": "https://www.drupal.org/user/26618"
+            },
+            {
+                "name": "jmiccolis",
+                "homepage": "https://www.drupal.org/user/31731"
+            },
+            {
+                "name": "tekante",
+                "homepage": "https://www.drupal.org/user/640024"
+            },
+            {
+                "name": "yhahn",
+                "homepage": "https://www.drupal.org/user/264833"
+            }
+        ],
+        "description": "Manage contextual conditions and reactions for different portions of your site.",
+        "homepage": "https://github.com/oddhill/context",
+        "keywords": [
+            "Drupal",
+            "block",
+            "conditions",
+            "context",
+            "visibility"
+        ],
+        "support": {
+            "source": "https://github.com/oddhill/context",
+            "issues": "https://github.com/oddhill/context/issues",
+            "docs": "https://github.com/oddhill/context"
+        }
+    },
+    {
+        "name": "drupal/link_attributes",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/link_attributes",
+            "reference": "8.x-1.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/link_attributes-8.x-1.1.zip",
+            "reference": "8.x-1.1",
+            "shasum": "9e53953353b1d295dcfdd63ee6bba9b610a00a93"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.1",
+                "datestamp": "1500846243",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "larowlan",
+                "homepage": "https://www.drupal.org/user/395439"
+            }
+        ],
+        "description": "Provides a widget to allow settings of link attributes for menu links.",
+        "homepage": "https://www.drupal.org/project/link_attributes",
+        "support": {
+            "source": "http://cgit.drupalcode.org/link_attributes"
+        }
+    },
+    {
+        "name": "drupal/bootstrap",
+        "version": "3.6.0",
+        "version_normalized": "3.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/bootstrap",
+            "reference": "8.x-3.6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.6.zip",
+            "reference": "8.x-3.6",
+            "shasum": "fa05324302f837d614bc395286e463b77628854e"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-theme",
+        "extra": {
+            "branch-alias": {
+                "dev-3.x": "3.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-3.6",
+                "datestamp": "1506357844",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "markcarver",
+                "homepage": "https://www.drupal.org/user/501638"
+            },
+            {
+                "name": "neardark",
+                "homepage": "https://www.drupal.org/user/661076"
+            },
+            {
+                "name": "sylus",
+                "homepage": "https://www.drupal.org/user/339714"
+            },
+            {
+                "name": "wundo",
+                "homepage": "https://www.drupal.org/user/25523"
+            }
+        ],
+        "homepage": "https://www.drupal.org/project/bootstrap",
+        "support": {
+            "source": "http://cgit.drupalcode.org/bootstrap"
+        }
+    },
+    {
+        "name": "drupal/layout_plugin",
+        "version": "1.0.0-alpha23",
+        "version_normalized": "1.0.0.0-alpha23",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/layout_plugin",
+            "reference": "8.x-1.0-alpha23"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/layout_plugin-8.x-1.0-alpha23.zip",
+            "reference": "8.x-1.0-alpha23",
+            "shasum": "c79992e2f52ac6a7c8dc0706512f2c70fc9f5e11"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-alpha23",
+                "datestamp": "1476269960",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Project has not opted into security advisory coverage!"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "David Snopek",
+                "homepage": "https://www.drupal.org/user/172527"
+            },
+            {
+                "name": "Bram Goffings",
+                "homepage": "https://www.drupal.org/user/266527"
+            },
+            {
+                "name": "Fredrik Lassen",
+                "homepage": "https://www.drupal.org/user/243377"
+            }
+        ],
+        "description": "An API module to hold the Drupal 8 plugin manager for layouts.",
+        "homepage": "https://www.drupal.org/project/layout_plugin",
+        "keywords": [
+            "layout",
+            "php"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/layout_plugin"
+        }
+    },
+    {
+        "name": "drupal/bootstrap_layouts",
+        "version": "4.1.0",
+        "version_normalized": "4.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/bootstrap_layouts",
+            "reference": "8.x-4.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/bootstrap_layouts-8.x-4.1.zip",
+            "reference": "8.x-4.1",
+            "shasum": "3f1e7598e9a476e4d396ddc1e49cd2851e948a2c"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "drupal/layout_plugin": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-4.x": "4.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-4.1",
+                "datestamp": "1481413087",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "darol100",
+                "homepage": "https://www.drupal.org/user/2667123"
+            },
+            {
+                "name": "hctom",
+                "homepage": "https://www.drupal.org/user/112790"
+            },
+            {
+                "name": "markcarver",
+                "homepage": "https://www.drupal.org/user/501638"
+            }
+        ],
+        "description": "This module is going to generate layouts with Bootstrap grid system.",
+        "homepage": "https://www.drupal.org/project/bootstrap_layouts",
+        "support": {
+            "source": "http://cgit.drupalcode.org/bootstrap_layouts"
+        }
     }
 ]
