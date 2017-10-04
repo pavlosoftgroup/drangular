@@ -22,7 +22,9 @@
         "drupal/hook_update_deploy_tools": "1.x-dev",
         "drupal/token": "^1.0",
         "drupal/context": "^4.0@beta",
-        "drupal/link_attributes": "^1.1"
+        "drupal/link_attributes": "^1.1",
+        "drupal/bootstrap": "^3.6",
+        "drupal/bootstrap_layouts": "^4.1"
     },
     "replace": {
         "drupal/core": "~8.3"
